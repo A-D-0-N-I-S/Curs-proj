@@ -1,207 +1,264 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CAR MUSC</title>
-    <link rel="stylesheet" href="/CSS/index.css">
-    <link rel="stylesheet" href="/CSS/adaptive.css">
-    <xml src="/.idea/modules.xml"></xml>
-    <xml src="/.idea/php.xml"></xml>
-    <xml src="/.idea/tuning_curs.iml"></xml>
-    <xml src="/.idea/workspace.xml"></xml>
-    <script src="/libs/gsap/gsap.min.js" defer></script>
-    <script src="/libs/gsap/ScrollSmoother.min.js" defer></script>
-    <script src="/libs/gsap/ScrollTrigger.min.js" defer></script>
-    <script src="/JS/main.js" defer></script>
-    <script src="/JS/index.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/adaptive.css">
 </head>
+
 <body>
     <div class="upward" onclick="scrollTopTop()"></div>
-    <div class="wrapper"> 
+    <div class="wrapper">
         <div class="content">
-    
+
             <header id="header">
-                <img class="header-foto" src="/img/header-foto.svg">
+                <img class="header-foto" src="img/header-foto.svg" alt="header-foto">
                 <div class="menu">
                     <div class="burger">
                         <span></span>
                         <span></span>
                         <span></span>
                     </div>
-                <div class="header_menu">
-                    <ul class="header_menu_list">
-                        <li class="header_menu_list_item">
-                            <a href="index.html" class="header_menu_list_item_link">Главная</a>
-                        </li>
-                        <li class="header_menu_list_item">
-                            <a href="car_wrap.html" class="header_menu_list_item_link">Оклейка автомобилей</a>
-                        </li>
-                        <li class="header_menu_list_item">
-                            <a href="car_detailing.html" class="header_menu_list_item_link">Детейлинг автомобилей</a>
-                        </li>
-                        <li class="header_menu_list_item">
-                            <a href="gallery_of_works.html" class="header_menu_list_item_link">Галерея работ</a>
-                        </li>
-                        <li class="header_menu_list_item">
-                            <a href="questions.html" class="header_menu_list_item_link">Часто задаваемые вопросы</a>
-                        </li>
-                    </ul>
+                    <div class="header_menu">
+                        <ul class="header_menu_list">
+                            <li class="header_menu_list_item">
+                                <a href="index.html" class="header_menu_list_item_link">Главная</a>
+                            </li>
+                            <li class="header_menu_list_item">
+                                <a href="car_wrap.html" class="header_menu_list_item_link">Оклейка автомобилей</a>
+                            </li>
+                            <li class="header_menu_list_item">
+                                <a href="car_detailing.html" class="header_menu_list_item_link">Детейлинг
+                                    автомобилей</a>
+                            </li>
+                            <li class="header_menu_list_item">
+                                <a href="gallery_of_works.html" class="header_menu_list_item_link">Галерея работ</a>
+                            </li>
+                            <li class="header_menu_list_item">
+                                <a href="questions.html" class="header_menu_list_item_link">Часто задаваемые вопросы</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
 
-        <div class="header_content">
-            <div class="header_text-logo">
-                <h3>ЧАСТО ЗАДАВАЕМЫЕ<br>ВОПРОСЫ</h3>
-            </div>
-            <div class="header_rombo">
-                <p class="romb"><img src="/img/romb.svg"></p>
-            </div>
-            <div class="header_text-info">
-                <p>Вы можете задать любой вопрос нашим специалистам и получить ответ в течении 15 минут!</p>
-            </div>
-            <div class="header_content_btn">
-                <button class="header_content_btn btn active-btn scroll"><p class="main-text-adaptive">ЗАДАТЬ ВОПРОС</p></button>
-            </div>
-        </div>
-    </header>
+                <div class="header_content">
+                    <div class="header_text-logo">
+                        <h3>ЧАСТО ЗАДАВАЕМЫЕ<br>ВОПРОСЫ</h3>
+                    </div>
+                    <div class="header_rombo">
+                        <p class="romb"><img src="img/romb.svg" alt="romb"></p>
+                    </div>
+                    <div class="header_text-info">
+                        <p>Вы можете задать любой вопрос нашим специалистам и получить ответ в течении 15 минут!</p>
+                    </div>
+                </div>
+            </header>
 
-    <div class="container">
-        <div class="questions_header">
-            <p class="main-text">ВОПРОС-ОТВЕТ</p>
-            <p class="romb"><img src="/img/romb.svg"></p>
-        </div>
-        <div class="accordion">
-            <div class="accordion__title">
-                <p class="accordion__title-red">КАК ОПРЕДЕЛИТЬ КЛАСС СВОЕГО АВТОМОБИЛЯ?</p>
-                <svg width="15" height="10" viewBox="0 0 42 25">
-                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
-                </svg>
-            </div>
-            <div class="accordion__content">
-                <p> <p class="accordion__title-red">Класс 1:</p> Миниавтомобили, длина кузова которых составляет менее 3,6 метра, а ширина – не более 1,6 метра. 
-                    <p class="accordion__title-red">Класс 2:</p> Категория «Small cars», к которой относятся машины с кузовом длиной до 4,2 метров и шириной не более 1,7 метра. Объем двигателя укладывается в диапазон от 1,2 до 1,6 литра. По сравнению с описанным ранее, этот класс легковых автомобилей представлен заметно более вместительными и комфортными авто.
-                    <p class="accordion__title-red">Класс 3:</p> Длина машин может достигать 4,5 метра. Внутри салона с комфортом размещаются до 5 пассажиров, багажное отделение достаточно большое. Популярные типы кузова – среднеразмерный седан и хетчбэк. 
-                    <p class="accordion__title-red">Класс 4:</p> Так называемый «семейный класс», представленный преимущественно универсалами и седанами длиной до 4,7 метра и шириной до 1,9 метра.  Особенности машин: просторный салон и вместительное багажное отделение, цена средняя или выше, двигатель объемом до 2,5 литра, недешевая отделка салона.
-                    <p class="accordion__title-red">Класс 5:</p> Самые комфортные автомобили среднего класса, которые часто именуются как «бизнес-класс». В большинстве воем это седаны, значительно реже встречаются универсалы. Для производства используются дорогостоящие и качественные материалы, в том числе натуральная кожа, также есть дополнительные опции для более комфортной и безопасной езды.
-                    <p class="accordion__title-red">Класс 6:</p> Категория представительских авто, относящихся к классу люкс. Это крупногабаритные седаны длиной от 5 и более метров с дорогой отделкой салона, множеством опций, с продвинутой электроникой и роскошным дизайном. 
-                    <p class="accordion__title-red">Класс 7:</p> Относятся машины с кузовом типа купе. Это трехдверные авто с мощным двигателем и спортивным, зачастую агрессивным дизайном. 
-                    <p class="accordion__title-red">Класс 8:</p> Представлен кабриолетами и родстерами. Обва варианта не имеют жесткой крыши – вместо нее реализован откидывающийся верх. Из-за внешнего сходства многие не понимают разницы между родстером и кабриолетом, хотя отличить их просто. У первого посадочных мест строго два, тогда как у второго их может быть больше двух.
-            </div>
-        </div>
-        <div class="accordion">
-            <div class="accordion__title">
-                <p class="accordion__title-red">ЧТО ТАКОЕ ПОЛИУРЕТАНОВАЯ ПЛЕНКА?</p>
-                <svg width="15" height="10" viewBox="0 0 42 25">
-                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
-                </svg>
-            </div>
-            <div class="accordion__content">
-                <p>Полиуретановая пленка – это защитное покрытие, применяемое на кузовах автомобилей для предотвращения повреждений. Её главные свойства:<br>
+            <div class="container">
+                <div class="questions_header">
+                    <p class="main-text">ВОПРОС-ОТВЕТ</p>
+                    <p class="romb"><img src="img/romb.svg"  alt="romb"></p>
+                </div>
+                <div class="accordion">
+                    <div class="accordion__title">
+                        <p class="accordion__title-red">КАК ОПРЕДЕЛИТЬ КЛАСС СВОЕГО АВТОМОБИЛЯ?</p>
+                        <svg width="15" height="10" viewBox="0 0 42 25">
+                            <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <div class="accordion__content">
+                        <p>
+                        <p class="accordion__title-red">Класс 1:</p> Миниавтомобили, длина кузова которых составляет
+                        менее 3,6 метра, а ширина – не более 1,6 метра. 
+                        <p class="accordion__title-red">Класс 2:</p> Категория «Small cars», к которой относятся машины
+                        с кузовом длиной до 4,2 метров и шириной не более 1,7 метра. Объем двигателя укладывается в
+                        диапазон от 1,2 до 1,6 литра. По сравнению с описанным ранее, этот класс легковых автомобилей
+                        представлен заметно более вместительными и комфортными авто.
+                        <p class="accordion__title-red">Класс 3:</p> Длина машин может достигать 4,5 метра. Внутри
+                        салона с комфортом размещаются до 5 пассажиров, багажное отделение достаточно большое.
+                        Популярные типы кузова – среднеразмерный седан и хетчбэк. 
+                        <p class="accordion__title-red">Класс 4:</p> Так называемый «семейный класс», представленный
+                        преимущественно универсалами и седанами длиной до 4,7 метра и шириной до 1,9 метра.  Особенности
+                        машин: просторный салон и вместительное багажное отделение, цена средняя или выше, двигатель
+                        объемом до 2,5 литра, недешевая отделка салона.
+                        <p class="accordion__title-red">Класс 5:</p> Самые комфортные автомобили среднего класса,
+                        которые часто именуются как «бизнес-класс». В большинстве воем это седаны, значительно реже
+                        встречаются универсалы. Для производства используются дорогостоящие и качественные материалы, в
+                        том числе натуральная кожа, также есть дополнительные опции для более комфортной и безопасной
+                        езды.
+                        <p class="accordion__title-red">Класс 6:</p> Категория представительских авто, относящихся к
+                        классу люкс. Это крупногабаритные седаны длиной от 5 и более метров с дорогой отделкой салона,
+                        множеством опций, с продвинутой электроникой и роскошным дизайном. 
+                        <p class="accordion__title-red">Класс 7:</p> Относятся машины с кузовом типа купе. Это
+                        трехдверные авто с мощным двигателем и спортивным, зачастую агрессивным дизайном. 
+                        <p class="accordion__title-red">Класс 8:</p> Представлен кабриолетами и родстерами. Обва
+                        варианта не имеют жесткой крыши – вместо нее реализован откидывающийся верх. Из-за внешнего
+                        сходства многие не понимают разницы между родстером и кабриолетом, хотя отличить их просто. У
+                        первого посадочных мест строго два, тогда как у второго их может быть больше двух.
+                    </div>
+                </div>
+                <div class="accordion">
+                    <div class="accordion__title">
+                        <p class="accordion__title-red">ЧТО ТАКОЕ ПОЛИУРЕТАНОВАЯ ПЛЕНКА?</p>
+                        <svg width="15" height="10" viewBox="0 0 42 25">
+                            <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <div class="accordion__content">
+                        <p>Полиуретановая пленка – это защитное покрытие, применяемое на кузовах автомобилей для
+                            предотвращения повреждений. Её главные свойства:<br>
 
-                    <br><p class="accordion__title-red">Защита от царапин и сколов:</p> Пленка предотвращает повреждения, такие как царапины и сколы, которые могут возникнуть в результате камней, песка или других мелких частиц, попадающих на поверхность автомобиля.
-                    <br><p class="accordion__title-red">Прозрачность:</p> Полиуретановая пленка прозрачна, что позволяет сохранить оригинальный цвет и вид кузова. Она не меняет внешний вид автомобиля.
-                    <br><p class="accordion__title-red">Устойчивость к грязи и загрязнениям:</p> Пленка обрабатывается специальным лаком, который удерживает грязь и не проникает в структуру материала. Это облегчает уход за автомобилем.
-                    <br><p class="accordion__title-red">Применение:</p> Полиуретановую пленку можно наносить на разные части кузова, такие как капот, бамперы, зеркала и двери. Этот процесс называется бронированием. Она защищает автомобиль от механических повреждений и сохраняет его в идеальном состоянии</p>
-            </div>
-        </div>
-        <div class="accordion">
-            <div class="accordion__title">
-                <p class="accordion__title-red">ЧТО ТАКОЕ ВИНИЛОВАЯ ПЛЕНКА?</p>
-                <svg width="15" height="10" viewBox="0 0 42 25">
-                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
-                </svg>
-            </div>
-            <div class="accordion__content">
-                <p>Виниловая пленка – это синтетический полимерный материал, толщиной до 0,3 мм, используемый для различных целей. Она может быть глянцевой или матовой. Главные характеристики:<br>
+                            <br>
+                        <p class="accordion__title-red">Защита от царапин и сколов:</p> Пленка предотвращает
+                        повреждения, такие как царапины и сколы, которые могут возникнуть в результате камней, песка или
+                        других мелких частиц, попадающих на поверхность автомобиля.
+                        <br>
+                        <p class="accordion__title-red">Прозрачность:</p> Полиуретановая пленка прозрачна, что позволяет
+                        сохранить оригинальный цвет и вид кузова. Она не меняет внешний вид автомобиля.
+                        <br>
+                        <p class="accordion__title-red">Устойчивость к грязи и загрязнениям:</p> Пленка обрабатывается
+                        специальным лаком, который удерживает грязь и не проникает в структуру материала. Это облегчает
+                        уход за автомобилем.
+                        <br>
+                        <p class="accordion__title-red">Применение:</p> Полиуретановую пленку можно наносить на разные
+                        части кузова, такие как капот, бамперы, зеркала и двери. Этот процесс называется бронированием.
+                        Она защищает автомобиль от механических повреждений и сохраняет его в идеальном состоянии
+                    </div>
+                </div>
+                <div class="accordion">
+                    <div class="accordion__title">
+                        <p class="accordion__title-red">ЧТО ТАКОЕ ВИНИЛОВАЯ ПЛЕНКА?</p>
+                        <svg width="15" height="10" viewBox="0 0 42 25">
+                            <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <div class="accordion__content">
+                        <p>Виниловая пленка – это синтетический полимерный материал, толщиной до 0,3 мм, используемый
+                            для различных целей. Она может быть глянцевой или матовой. Главные характеристики:<br>
 
-                    <br><p class="accordion__title-red">Защита и декорация:</p> Виниловая пленка применяется для защиты и украшения поверхностей. Например, на автомобилях она предотвращает царапины и сколы, а также может быть использована для рекламы.
-                    <br><p class="accordion__title-red"> Прозрачность и цвет:</p> Глянцевая пленка обычно используется для печати графики, а матовая – для объемных текстов. Она сохраняет оригинальный цвет и вид поверхности.
-                    <br><p class="accordion__title-red">Применение:</p> Виниловую пленку можно наносить на автомобили, мебель, окна и другие объекты. Она яркая, долговечная и удобна в монтаже.
+                            <br>
+                        <p class="accordion__title-red">Защита и декорация:</p> Виниловая пленка применяется для защиты
+                        и украшения поверхностей. Например, на автомобилях она предотвращает царапины и сколы, а также
+                        может быть использована для рекламы.
+                        <br>
+                        <p class="accordion__title-red"> Прозрачность и цвет:</p> Глянцевая пленка обычно используется
+                        для печати графики, а матовая – для объемных текстов. Она сохраняет оригинальный цвет и вид
+                        поверхности.
+                        <br>
+                        <p class="accordion__title-red">Применение:</p> Виниловую пленку можно наносить на автомобили,
+                        мебель, окна и другие объекты. Она яркая, долговечная и удобна в монтаже.
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion__title">
+                        <p class="accordion__title-red">КАК БЕЗОПАСНО ХРАНИТСЯ МОЯ МАШИНА?</p>
+                        <svg width="15" height="10" viewBox="0 0 42 25">
+                            <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <div class="accordion__content">
+                        <p>Вы можете не переживать за сохранность вашего авто - оно хранится на охраняемых стоянках
+                            внутри здания под наблюдением сотни камер. Именно мы несем ответственность за любые
+                            механические действия, повлекшие за собой негативные механические изменения вашего
+                            автомобиля (царапины, вмятины, падение автомобиля и др).
+                            <br><br>
+                            Наши профессионалы тщательно обслуживают Ваше авто.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <div class="accordion__title">
+                        <p class="accordion__title-red">КАК ДОЛГО ЖДАТЬ ВЫПОЛНЕНИЯ РАБОТЫ?</p>
+                        <svg width="15" height="10" viewBox="0 0 42 25">
+                            <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <div class="accordion__content">
+                        <p>Длительность выполнения работы зависит от самого тз и занятости нашего центра. Например, для
+                            покраски авто потребуется не менее 8 рабочих дней.
+                        </p>
+                    </div>
+                </div>
+
             </div>
-        </div>
-        
-        <div class="accordion">
-            <div class="accordion__title">
-                <p class="accordion__title-red">КАК БЕЗОПАСНО ХРАНИТСЯ МОЯ МАШИНА?</p>
-                <svg width="15" height="10" viewBox="0 0 42 25">
-                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
-                </svg>
-            </div>
-            <div class="accordion__content">
-                <p>Вы можете не переживать за сохранность вашего авто - оно хранится на охраняемых стоянках внутри здания под наблюдением сотни камер. Именно мы несем ответственность за любые механические действия, повлекшие за собой негативные механические изменения вашего автомобиля (царапины, вмятины,  падение автомобиля и др).
-                    <br><br>
-                    Наши профессионалы тщательно обслуживают Ваше авто.
-                </p>
-            </div>
-        </div>
-        <div class="accordion">
-            <div class="accordion__title">
-                <p class="accordion__title-red">КАК ДОЛГО ЖДАТЬ ВЫПОЛНЕНИЯ РАБОТЫ?</p>
-                <svg width="15" height="10" viewBox="0 0 42 25">
-                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
-                </svg>
-            </div>
-            <div class="accordion__content">
-                <p>Длительность выполнения работы зависит от самого тз и занятости нашего центра. Например, для покраски авто потребуется не менее 8 рабочих дней.
-                </p>
-            </div>
-        </div>
-        
-    </div>
 
 
             <form class="container" action="../indexDB.php" method="POST">
                 <div class="form">
                     <div class="form__header">
                         <p class="main-text">ОТВЕТИМ НА ЛЮБОЙ ВОПРОС</p>
-                        <p class="romb"><img src="/img/romb.svg"></p>
+                        <p class="romb"><img src="img/romb.svg"  alt="romb"></p>
                     </div>
                     <div class="form__submit">
-                        <div class="form__submit__item item_1"><input class="item__input" type="text" name="name" placeholder="ИМЯ"></div>
-                        <div class="form__submit__item item_2"><input class="item__input" type="text" name="phone" placeholder="ТЕЛЕФОН"></div>
-                        <div class="form__submit__item item_3"><textarea class="item__input item__text-area" name="info" type="text"  placeholder="УСЛУГА, ДЕТАЛЬ, ДР."></textarea></div>
-                        <a class="form__submit__item item_4" href="https://t.me/awdoss"><img class="form-logo" src="/img/telegram.svg"></a>
-                        <a class="form__submit__item item_5" href="https://www.youtube.com/channel/UCuZQ3jdGSsEARrvsTIg9lnQ"><img class="form-logo" src="/img//youtube.svg"></a>
-                        <a class="form__submit__item item_6" href="https://vk.com/a2d9s"><img class="form-logo" src="/img/vk.svg"></a>
-                        <div class="form__submit__item item_7"><button type="submit" class="btn active-btn submit"><p>ОТПРАВИТЬ</p></button></div>
+                        <div class="form__submit__item item_1"><input class="item__input" type="text" name="name"
+                                placeholder="ИМЯ"></div>
+                        <div class="form__submit__item item_2"><input class="item__input" type="text" name="phone"
+                                placeholder="ТЕЛЕФОН"></div>
+                        <div class="form__submit__item item_3"><textarea class="item__input item__text-area" name="info"
+                                placeholder="УСЛУГА, ДЕТАЛЬ, ДР."></textarea></div>
+                        <a class="form__submit__item item_4" href="https://t.me/awdoss"><img class="form-logo"
+                                src="img/telegram.svg" alt="form-logo"></a>
+                        <a class="form__submit__item item_5"
+                            href="https://www.youtube.com/channel/UCuZQ3jdGSsEARrvsTIg9lnQ"><img class="form-logo"
+                                src="img//youtube.svg"  alt="form-logo"></a>
+                        <a class="form__submit__item item_6" href="https://vk.com/a2d9s"><img class="form-logo"
+                                src="img/vk.svg"  alt="form-logo"></a>
+                        <div class="form__submit__item item_7"><button type="submit" class="btn active-btn submit">
+                                ОТПРАВИТЬ
+                            </button></div>
                         <div class="form__submit__item item_8">
-                            <div class="form-subtitle form-sub__sub1"><img src="/img/location.svg"><p class="form-subtitle__text form-adatvive">г. Москва, Можайское шоссе, Д.167</p></div>
-                            <div class="form-subtitle"><img src="/img/phone.svg"><p class="form-subtitle__text form-adatvive">8 (812) 123-45-67</p></div>
-                            <div class="form-subtitle"><img src="/img/mail.svg"><p class="form-subtitle__text form-adatvive">test@test.ru</p></div>
+                            <div class="form-subtitle form-sub__sub1"><img src="img/location.svg" alt="location">
+                                <p class="form-subtitle__text form-adatvive">г. Москва, Можайское шоссе, Д.167</p>
+                            </div>
+                            <div class="form-subtitle"><img src="img/phone.svg" alt="phone">
+                                <p class="form-subtitle__text form-adatvive">8 (812) 123-45-67</p>
+                            </div>
+                            <div class="form-subtitle"><img src="img/mail.svg" alt="mail">
+                                <p class="form-subtitle__text form-adatvive">test@test.ru</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </form>
 
-    <footer>
-        <div class="footer">
-            <span class="footer_line"></span>
-            <div class="footer__menu">
-                <p class="footer__menu__text">2024 &#169 CAR MUSC. Все права защищены</p>
-                <ul class="footer_menu_list">
-                    <li class="header_menu_list_item">
-                        <a href="index.html" class="header_menu_list_item_link">Главная</a>
-                    </li>
-                    <li class="header_menu_list_item">
-                        <a href="car_wrap.html" class="header_menu_list_item_link">Оклейка</a>
-                    </li>
-                    <li class="header_menu_list_item">
-                        <a href="car_detailing.html" class="header_menu_list_item_link">Детейлинг</a>
-                    </li>
-                    <li class="header_menu_list_item">
-                        <a href="gallery_of_works.html" class="header_menu_list_item_link">Галерея работ</a>
-                    </li>
-                    <li class="header_menu_list_item">
-                        <a href="questions.html" class="header_menu_list_item_link">Часто задаваемые вопросы</a>
-                    </li>
-                </ul>
-            </div>
+            <footer>
+                <div class="footer">
+                    <span class="footer_line"></span>
+                    <div class="footer__menu">
+                        <p class="footer__menu__text">2024 &#169; CAR MUSC. Все права защищены</p>
+                        <ul class="footer_menu_list">
+                            <li class="header_menu_list_item">
+                                <a href="index.html" class="header_menu_list_item_link">Главная</a>
+                            </li>
+                            <li class="header_menu_list_item">
+                                <a href="car_wrap.html" class="header_menu_list_item_link">Оклейка</a>
+                            </li>
+                            <li class="header_menu_list_item">
+                                <a href="car_detailing.html" class="header_menu_list_item_link">Детейлинг</a>
+                            </li>
+                            <li class="header_menu_list_item">
+                                <a href="gallery_of_works.html" class="header_menu_list_item_link">Галерея работ</a>
+                            </li>
+                            <li class="header_menu_list_item">
+                                <a href="questions.html" class="header_menu_list_item_link">Часто задаваемые вопросы</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
         </div>
-    </footer>
-</div>
-</div>
+    </div>
 
+    <script src="/libs/gsap/gsap.min.js" defer></script>
+    <script src="/libs/gsap/ScrollSmoother.min.js" defer></script>
+    <script src="/libs/gsap/ScrollTrigger.min.js" defer></script>
+    <script src="/JS/main.js" defer></script>
+    <script src="/JS/index.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
 </body>
+
 </html>

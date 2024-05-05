@@ -1,6 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200..700&display=swap");
 ::-webkit-scrollbar {
-  width: 0;
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #DB3138;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #9a2327;
 }
 
 * {
@@ -49,6 +61,7 @@ body {
   width: 100vw;
   font: 24px "Yanone Kaffeesatz", sans-serif;
   font-optical-sizing: auto;
+  overflow-x: hidden;
 }
 
 .upward {
@@ -88,7 +101,7 @@ header {
   display: flow-root;
   margin-bottom: 100px;
 }
-header .header-foto {
+header-foto {
   position: absolute;
   z-index: -1;
   width: 100%;
@@ -118,7 +131,7 @@ header .header_conteiner {
 }
 header .header_text-logo {
   text-align: center;
-  margin-top: 110px;
+  margin-top: 160px;
   font: 75px "Yanone Kaffeesatz", sans-serif;
   color: #DB3138;
 }
@@ -128,7 +141,7 @@ header .header_text-logo {
   margin: 30px 0;
 }
 
-.header_content {
+.header_content, .header_content--index {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -166,6 +179,12 @@ header .header_text-logo {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.header-foto {
+  position: absolute;
+  z-index: -10;
+  width: 100%;
 }
 
 .btn {
@@ -449,6 +468,7 @@ header .header_text-logo {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 10px;
+  margin-top: 10px;
 }
 
 .place-comments {
@@ -502,12 +522,13 @@ header .header_text-logo {
 }
 .gallery-auto__grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   padding: 0px 20px;
   gap: 15px;
 }
 .gallery-auto__foto {
   overflow: hidden;
+  max-width: 500px;
   border-radius: 20px;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
@@ -526,7 +547,7 @@ header .header_text-logo {
      object-fit: cover;
   -ms-flex-item-align: baseline;
       align-self: baseline;
-  width: 300px;
+  width: 400px;
   height: 300px;
 }
 
@@ -684,7 +705,7 @@ a > img, a > img, a > img {
 }
 
 .item_5:hover {
-  background-color: #DB3138;
+  background-color: red;
 }
 
 /* footer */
