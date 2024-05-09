@@ -186,7 +186,7 @@
             </div>
 
 
-            <form class="container" id="add-form" action="indexDB.php" method="POST">
+            <form class="container" id="form" name="form" class="form">
                 <div class="form">
                     <div class="form__header">
                         <p class="main-text">ОТВЕТИМ НА ЛЮБОЙ ВОПРОС</p>
@@ -206,7 +206,7 @@
                                 src="img//youtube.svg" alt="youtube"></a>
                         <a class="form__submit__item item_6" href="https://vk.com/a2d9s"><img class="form-logo"
                                 src="img/vk.svg" alt="vk"></a>
-                        <div class="form__submit__item item_7"><button type="submit" class="btn active-btn submit"> ОТПРАВИТЬ
+                        <div class="form__submit__item item_7"><button class="btn active-btn submit"> ОТПРАВИТЬ
                             </button></div>
                         <div class="form__submit__item item_8">
                             <div class="form-subtitle form-sub__sub1"><img src="img/location.svg" alt="location">
@@ -222,6 +222,8 @@
                     </div>
                 </div>
             </form>
+
+
 
             <footer>
                 <div class="footer">
@@ -251,6 +253,15 @@
         </div>
     </div>
 
+    <div class="overlay js-overlay-thank-you">
+        <div class="popup js-thank-you">
+            <h3 class="form-modal-text modal-text-main">Спасибо за заявку!</h3>
+            <p class="form-modal-text">Наши операторы вскором врмени свяжутся с Вами!</p>
+            <p  class="form-modal-text">Будьте на связи!</p>
+            <div class="close-popup js-close-thank-you"></div>
+        </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
     <script src="https://unpkg.com/imask" defer></script>
     <script src="libs/gsap/gsap.min.js" defer></script>
@@ -258,7 +269,18 @@
     <script src="libs/gsap/ScrollTrigger.min.js" defer></script>
     <script src="JS/main.js" defer></script>
     <script src="JS/index.js" defer></script>
+    <script src="JS/ajax.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="https://unpkg.com/imask" defer></script>
+    <script src="libs/gsap/gsap.min.js" defer></script>
+    <script src="libs/gsap/ScrollSmoother.min.js" defer></script>
+    <script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+    <script src="JS/main.js" defer></script>
+    <script src="JS/index.js" defer></script>
+    <script src="JS/ajax.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
 </body>
 
 </html>

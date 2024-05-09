@@ -48,14 +48,13 @@ const body = document.body;
     })
  }
 
- document.getElementById('add-form').addEventListener('submit', function (event){
+ document.getElementById("form").addEventListener('submit', function (event){
      validation(this);
  })
 
 
-
 // МАСКА ДЛЯ НОМЕР ТЕЛЕФОНА
-const phone = document.querySelector(".phones");
+const phone = document.querySelector('.phones');
 console.log(phone);
 const mask = new IMask(phone, {
     mask: "{+375}(00)000-00-00",
