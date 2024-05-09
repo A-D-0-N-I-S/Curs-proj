@@ -387,6 +387,9 @@ header{
     height: 400px;
 }
 }
+.gallery-auto__grid{
+    justify-items: center;
+}
 .foto{
     object-fit: cover;
     align-self: baseline;
@@ -610,7 +613,7 @@ td{
 }
 .accordion__content{
     max-height: 0;
-    overflow: hidden;
+    overflow: scroll;
     transition: max-height 1.4s ease;
 }
 .accordion__content p{

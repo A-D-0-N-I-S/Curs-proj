@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="CSS/index.css">
     <link rel="stylesheet" href="CSS/adaptive.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-
-
 </head>
 
 <body>
@@ -210,28 +208,27 @@
                 </div>
             </div>
 
-            <form class="container" action="../indexDB.php" method="POST">
+            <form class="container" id="add-form" action="indexDB.php" method="POST">
                 <div class="form">
                     <div class="form__header">
                         <p class="main-text">ОТВЕТИМ НА ЛЮБОЙ ВОПРОС</p>
                         <p class="romb"><img src="img/romb.svg" alt="romb"></p>
                     </div>
                     <div class="form__submit">
-                        <div class="form__submit__item item_1"><input class="item__input" type="text" name="name"
+                        <div class="form__submit__item item_1"><input required class="item__input" type="text" name="name"
                                 placeholder="ИМЯ"></div>
-                        <div class="form__submit__item item_2"><input class="item__input" type="text" name="phone"
-                                placeholder="ТЕЛЕФОН"></div>
-                        <div class="form__submit__item item_3"><textarea class="item__input item__text-area" name="info"
+                        <div class="form__submit__item item_2"><input required class="item__input phones" type="text"
+                                name="phone" placeholder="+375(00)-000-00-00"></div>
+                        <div class="form__submit__item item_3"><textarea required class="item__input item__text-area" name="info"
                                 placeholder="УСЛУГА, ДЕТАЛЬ, ДР."></textarea></div>
                         <a class="form__submit__item item_4" href="https://t.me/awdoss"><img class="form-logo"
-                                src="img/telegram.svg" alt="form-logo"></a>
+                                src="img/telegram.svg" alt="telegram"></a>
                         <a class="form__submit__item item_5"
                             href="https://www.youtube.com/channel/UCuZQ3jdGSsEARrvsTIg9lnQ"><img class="form-logo"
-                                src="img//youtube.svg" alt="form-logo"></a>
+                                src="img//youtube.svg" alt="youtube"></a>
                         <a class="form__submit__item item_6" href="https://vk.com/a2d9s"><img class="form-logo"
-                                src="img/vk.svg" alt="form-logo"></a>
-                        <div class="form__submit__item item_7"><button type="submit" class="btn active-btn submit">
-                                ОТПРАВИТЬ
+                                src="img/vk.svg" alt="vk"></a>
+                        <div class="form__submit__item item_7"><button type="submit" class="btn active-btn submit"> ОТПРАВИТЬ
                             </button></div>
                         <div class="form__submit__item item_8">
                             <div class="form-subtitle form-sub__sub1"><img src="img/location.svg" alt="location">
@@ -276,11 +273,14 @@
         </div>
     </div>
 
-    <script src="libs/gsap/gsap.min.js" defer></script>
-    <script src="libs/gsap/ScrollSmoother.min.js" defer></script>
-    <script src="libs/gsap/ScrollTrigger.min.js" defer></script>
-    <script src="JS/main.js" defer></script>
-    <script src="JS/index.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="https://unpkg.com/imask" defer></script>
+    <script src="/libs/gsap/gsap.min.js" defer></script>
+    <script src="/libs/gsap/ScrollSmoother.min.js" defer></script>
+    <script src="/libs/gsap/ScrollTrigger.min.js" defer></script>
+    <script src="/JS/main.js" defer></script>
+    <script src="/JS/index.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
 </body>
 
 </html>

@@ -56,7 +56,7 @@ const body = document.body;
 
 // МАСКА ДЛЯ НОМЕР ТЕЛЕФОНА
 const phone = document.querySelector(".phones");
-
+console.log(phone);
 const mask = new IMask(phone, {
     mask: "{+375}(00)000-00-00",
 });

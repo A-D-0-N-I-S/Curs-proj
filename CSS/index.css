@@ -542,6 +542,10 @@ header .header_text-logo {
   height: 400px;
 }
 
+.gallery-auto__grid {
+  justify-items: center;
+}
+
 .foto {
   -o-object-fit: cover;
      object-fit: cover;
@@ -855,7 +859,7 @@ td {
 
 .accordion__content {
   max-height: 0;
-  overflow: hidden;
+  overflow: scroll;
   -webkit-transition: max-height 1.4s ease;
   transition: max-height 1.4s ease;
 }
