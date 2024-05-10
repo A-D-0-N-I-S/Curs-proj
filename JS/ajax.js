@@ -32,5 +32,4 @@ $(document).mouseup(function (e) { // по клику вне попапа
     }
 });
 
-	
 })

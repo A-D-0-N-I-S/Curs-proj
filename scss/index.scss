@@ -396,6 +396,11 @@ header{
     width: 400px;
     height: 300px;
 }
+.gallery-auto__foto img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 .doc-foto{
     width: 100%;
 }
