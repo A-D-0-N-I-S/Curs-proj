@@ -449,11 +449,11 @@ header{
     grid-column-end: 5;
     font-size: 22px;
     align-items: center;
+    & > img {
+        padding-right: 10px;
+        height: 24px;
+        width: 24px;
 }
-.item_8 > img {
-    padding-right: 10px;
-    height: 24px;
-    width: 24px;
 }
 .item_7, .item_8{
     height: 60px;
@@ -469,7 +469,7 @@ header{
     grid-column-start: 1;
     grid-column-end: 4;
 }
-a> img, a> img, a> img{
+a> img{
     width: 20px;
     height: 20px;
 }

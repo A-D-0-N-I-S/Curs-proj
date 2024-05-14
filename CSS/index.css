@@ -630,7 +630,6 @@ header .header_text-logo {
       -ms-flex-align: center;
           align-items: center;
 }
-
 .item_8 > img {
   padding-right: 10px;
   height: 24px;
@@ -658,7 +657,7 @@ header .header_text-logo {
   grid-column-end: 4;
 }
 
-a > img, a > img, a > img {
+a > img {
   width: 20px;
   height: 20px;
 }
